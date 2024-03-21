@@ -26,14 +26,17 @@ mongoose.connect(URI, {
   console.log("Error connecting to the database:", error);
 });
 
+
 app.get("/" , (req,res)=>{
   res.json("hello")
 })
-
 // Route for handling student-related routes
 const userStudentRoute = require("./routes/userStudentRoutes");
 app.use("/students", userStudentRoute);
 
+app.get("/students" , (req,res)=>{
+  res.json("hello")
+})
 // Route for handling teacher-related routes
 const userTeacherRoute = require("./routes/userRoutes");
 app.use("/teachers", userTeacherRoute);
