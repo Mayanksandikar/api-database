@@ -8,7 +8,7 @@
   ],
   "routes": [
     { 
-      "src": "/api/teachers/",
+      "src": "/api/teachers/*",
       "dest": "index.js"
     },
     {
