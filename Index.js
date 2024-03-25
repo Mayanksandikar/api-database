@@ -29,7 +29,7 @@ mongoose.connect(URI, {
 });
 
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   
   res.json({ message: "Hello Vercel" });
 });
@@ -38,9 +38,7 @@ app.use("/", (req, res) => {
 const userStudentRoute = require("./routes/userStudentRoutes");
 app.use("/students", userStudentRoute);
 
-app.get("/students" , (req, res)=>{
-  res.json("hello")
-})
+
 // Route for handling teacher-related routes
 const userTeacherRoute = require("./routes/userRoutes");
 app.use("/teachers", userTeacherRoute);
