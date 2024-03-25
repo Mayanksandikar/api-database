@@ -33,7 +33,7 @@ mongoose.connect(URI, {
   console.log("Error connecting to the database:", error);
 });
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   res.json({ message: "Hello Vercel" });
 });
 
