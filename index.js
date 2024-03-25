@@ -20,7 +20,6 @@ app.use(cors({
 app.use(express.json());
 
 // Connect to the MongoDB database
-
 const URI = "mongodb+srv://mayanksandikar191098:P612SpRzc2bEeue0@reactjs.smvpawt.mongodb.net/krt?retryWrites=true&w=majority&appName=reactjs";
 
 mongoose.connect(URI, {
