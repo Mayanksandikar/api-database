@@ -13,6 +13,7 @@
     },
     {
       "src": "/api/students/", 
+      "dest": "index.js"
     },
     {
       "src": "/.*",
