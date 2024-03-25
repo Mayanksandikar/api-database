@@ -2,15 +2,12 @@
     "version": 2,
     "routes": [
       {
-        "handle": "filesystem"
-      },
-      {
         "src": "/(.*)",
-        "dest": "index.js"
+        "dest": "backend/index.js"
       }
     ],
     "functions": {
-      "index.js": {
+      "backend/index.js": {
         "runtime": "nodejs14.x"
       }
     }
