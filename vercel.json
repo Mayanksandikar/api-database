@@ -1,41 +1,22 @@
 {
-    "version": 2,
-
-    "routes": [
-      {
-        "src": "/api/students",
-        "dest": "/students/index.js"
-      },
-      {
-        "src": "/api/teachers",
-        "dest": "/teachers/index.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.js"
-      }
-    ],
-    "env": {
-      "MONGODB_URI": "mongodb+srv://mayanksandikar191098:P612SpRzc2bEeue0@reactjs.smvpawt.mongodb.net/krt?retryWrites=true&w=majority&appName=reactjs"
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
     }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
+  ],
+  "routes": [
+    { 
+      "src": "/api/teachers/",
+      "dest": "index.js"
+    },
+    {
+      "src": "/api/students/"
+    },
+    {
+      "src": "/.*",
+      "dest": "index.js"
+    }
+  ]
+}
