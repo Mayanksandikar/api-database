@@ -29,7 +29,7 @@ mongoose.connect(URI, {
 });
 
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   
   res.json({ message: "Hello Vercel" });
 });
