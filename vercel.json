@@ -2,39 +2,17 @@
     "version": 2,
     "routes": [
       {
-        "src": "/api/students",
-        "dest": "/students/index.js"
-      },
-      {
-        "src": "/api/teachers",
-        "dest": "/teachers/index.js"
+        "handle": "filesystem"
       },
       {
         "src": "/(.*)",
-        "dest": "/index.js"
+        "dest": "index.js"
       }
     ],
-    "env": {
-      "MONGODB_URI": "mongodb+srv://mayanksandikar191098:P612SpRzc2bEeue0@reactjs.smvpawt.mongodb.net/krt?retryWrites=true&w=majority&appName=reactjs"
+    "functions": {
+      "index.js": {
+        "runtime": "nodejs14.x"
+      }
     }
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
