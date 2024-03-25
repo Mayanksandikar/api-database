@@ -1,17 +1,22 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
-    {
-      "src": "/teachers/*",
-      "dest": "/index.js"
+    { 
+      "src": "/api/teachers/", // Endpoint for teacher signup
+      "dest": "index.js"
     },
     {
-      "src": "/students/*",
-      "dest": "/index.js"
+      "src": "/api/students/", 
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.js"
+      "src": "/.*",
+      "dest": "index.js"
     }
   ]
 }
