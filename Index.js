@@ -43,7 +43,7 @@ app.use("/teachers", userTeacherRoute);
 app.use('/favicon.ico', (req, res) => res.status(204));
 
 // Default route handler
-app.get('/vercel', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).send('Hello, World!');
 });
 
