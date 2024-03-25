@@ -11,11 +11,11 @@ dotenv.config();
 const app = express();
 
 // CORS configuration to allow requests from a specific origin
-app.use(cors({
-  origin: ["https://student-data-9os7.vercel.app"],
-  methods: ["POST", "GET"],
-  credentials:true
-}));
+// app.use(cors({
+//   origin: ["https://student-data-9os7.vercel.app"],
+//   methods: ["POST", "GET"],
+//   credentials:true
+// }));
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
