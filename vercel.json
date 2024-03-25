@@ -1,8 +1,11 @@
 {
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/"
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "nodejs14.x"
+      },
+      "index.js": {
+        "runtime": "nodejs14.x"
       }
-    ]
+    }
   }
+  
