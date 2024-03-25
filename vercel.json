@@ -2,11 +2,11 @@
   "version": 2,
   "routes": [
     {
-      "src": "/api/teachers/*",
+      "src": "teachers/*",
       "dest": "/index.js"
     },
     {
-      "src": "/api/students/*",
+      "src": "students/*",
       "dest": "/index.js"
     },
     {
