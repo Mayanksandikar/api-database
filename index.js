@@ -23,7 +23,6 @@ app.use(express.json());
 
 const URI = "mongodb+srv://mayanksandikar191098:P612SpRzc2bEeue0@reactjs.smvpawt.mongodb.net/krt?retryWrites=true&w=majority&appName=reactjs";
 
-
 mongoose.connect(URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
