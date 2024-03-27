@@ -12,7 +12,7 @@
       "dest": "index.js"
     },
     {
-      "src": "/api/students/", 
+      "src": "/api/students/*", 
       "dest": "index.js"
     },
     {
